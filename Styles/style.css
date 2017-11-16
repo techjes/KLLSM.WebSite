@@ -32,14 +32,17 @@
 .topNav {
     list-style-type: none;
     background-color: rgba(0,0,0,.8);
+    padding:0;
 }
 .topNav a{
     text-decoration: None;
     color: rgb(200, 200, 200);
+    padding: 10px 25px 10px 25px;
+    display: block;
 }
 
 .topNav li {
-    display: inline-block;   
+    display: inline-block;  
 }
 
 .topNav li:hover{
