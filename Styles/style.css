@@ -20,6 +20,7 @@
 [class*="col-"] {
     float: left;
     padding: 15px;
+    border: 1px red solid;
 }
 
 .row::after {
@@ -30,8 +31,17 @@
 
 .topNav {
     list-style-type: none;
+    background-color: rgba(0,0,0,.8);
+}
+.topNav a{
+    text-decoration: None;
+    color: rgb(200, 200, 200);
 }
 
 .topNav li {
-    display: block;
+    display: inline-block;   
+}
+
+.topNav li:hover{
+    background-color: rgb(20,20,20)
 }
