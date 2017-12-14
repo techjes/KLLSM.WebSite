@@ -4,24 +4,225 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="Styles/style.css">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <body>
-    <div class="col-12 header">
-
-    </div>
-    <nav>
-        <ul class="col-12 topNav">
-            <li><a href="">One</a></li>
-            <li><a href="">One</a></li>
-            <li><a href="">One</a></li>
-        </ul>
-    </nav>
-        <div class="col-12 main">
-
-        </div>
-
     
+    <div class="jumbotron jumbotron-fluid" style="background-color:aqua">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-10">
+                    <h1 class="display-3">Affordable</h1>
+                    <p class="lead">Traverse City has always been a desirable place to work and live. Today’s Traverse City is growing and its local population is working to adjust to many changes, one of which is the availability of affordable housing that doesn’t break the bank and put an undue burden on residents.</p>                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-2">
+                <div class="list-group" id="myList" role="tablist">
+                    <a class="list-group-item list-group-item-action active" data-toggle="list" href="#intro" role="tab">Introduction</a>
+                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#housing" role="tab">Housing</a>
+                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#rentals" role="tab">Rentals</a>
+                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#compare" role="tab">Cost Comparisons</a>
+                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#sources" role="tab">Sources</a>
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane active" id="intro" role="tabpanel">
+                        <p>Housing prices have continued to rise since the economic recovery following the 2008 recession. As home costs rise, they begin to require a larger percentage of the yearly salary of residents looking to purchase homes, putting those currently buying homes and even looking for rentals closer to being considered “overburdened” by their housing costs.</p>
+                        <p>Residents are “overburdened” if housing costs account for greater than 30% of their household’s total income. In Grand Traverse County, the average annual income before taxes is $27,000 per capita and $50,000 for households. With houses averaging over $200,000 and rents upwards of $800 per month, the cost of living can be closer to 50% of household income after taxes and other expenses.</p>
+                        <p>With costs going up for everyone and incomes remaining fairly level, it is clear that the Traverse City area is in need of more affordable housing options. Fewer “overburdened” residents would result in increased activity in other sectors of the local economy.</p>
+                    </div>
+                    <div class="tab-pane" id="housing" role="tabpanel">
+                        <h1>Housing</h1>
+                        <hr>
+                        <h3>Availability in Michigan</h3>
+                        <p>To better understand the housing situation in the Traverse City area, it can be useful to compare it with other cities in Michigan. For example, if you are currently searching for a home in the Traverse City area, there are 14 listings in good condition that can be considered “affordable,” ranging from $150,000 to $200,000.</p>
+                        <p>In nearby Cadillac, you can currently find 50 listings in good condition that are in the more affordable $50,000 to $140,000 range. If you look toward a larger city in Michigan, Detroit offers a large mix of housing choices, but affordable options that are in good condition are still abundant with 410 listings between $50,000 and $180,000. For something in between, Jackson Michigan offers 241 listing between $60,000 and $180,000. Even comparable tourist towns in the area offer more options with typically lower prices. Petoskey currently has 26 listings that range between $80,000 and $180,000. In this larger context, it becomes clear that Traverse City currently lacks affordable housing both in terms of price and availability, and the areas that have more affordable housing options lack the necessary income levels.</p>
+                    </div>
+                    <div class="tab-pane" id="rentals" role="tabpanel">
+                        <h1>Rentals</h1>
+                        <hr>
+                        <h3>Low Income House Tax Credit (LIHTC)</h3>
+                        <p>
+                            Overburdened Renters pay more than 30% of their income to rent.<br>
+                            FMR is the average housing cost of an area. These are used to establish payment standards for the Housing Choice Voucher Program.<br>
+                            HUD apartments are based on income. HUD is a voucher program that give those who qualify subsidies to help pay for rent(Helps relieve overburdened renters).<br> 
+                            When applying for any of these apartments, the waiting lists that you’re put into are preference based. <a href="https://affordablehousingonline.com/housing-help/What-Does-It-Mean-Preferences">How It Works.</a>
+                        </p>
+                        <table class="table table-sm table-striped">
+                            <thead>
+                                <th>Location</th>
+                                <th>LIHTC Apartments</th>
+                                <th>HUD Apartments</th>
+                                <th>% Occupied</th>
+                                <th>Median Household Income</th>
+                                <th>Median Rent</th>
+                                <th>Overburdened Renters</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th><a href="https://affordablehousingonline.com/housing-search/Michigan/Traverse-City?show=20">Traverse City</a></th>
+                                    <td>1331</td>
+                                    <td>483</td>
+                                    <td>38.46%</td>
+                                    <td>$43,067 - $51,101</td>
+                                    <td>$777 - $839</td>
+                                    <td>46.84%</td>
+                                </tr>
+                                <tr>
+                                    <th><a href="https://affordablehousingonline.com/housing-search/Michigan/Grand-Traverse-County">Grand Traverse County</a></th>
+                                    <td>1501</td>
+                                    <td>619</td>
+                                    <td>23.75%</td>
+                                    <td>$51,129 - %54,771</td>
+                                    <td>$836 - $882</td>
+                                    <td>45.93%</td>
+                                </tr>
+                                <tr>
+                                    <th><a href="https://affordablehousingonline.com/housing-search/Michigan/Cadillac">Cadillac</a></th>
+                                    <td>673</td>
+                                    <td>430</td>
+                                    <td>37.34%</td>
+                                    <td>$33,722 - $40,854</td>
+                                    <td>$623 - $775</td>
+                                    <td>46.45%</td>
+                                </tr>
+                                <tr>
+                                    <th><a href="https://affordablehousingonline.com/housing-search/Michigan/Petoskey">Petoskey</a></th>
+                                    <td>719</td>
+                                    <td>176</td>
+                                    <td>44.65%</td>
+                                    <td>$31,640 - $43,472</td>
+                                    <td>$537 - $741</td>
+                                    <td>47.15%</td>
+                                </tr>
+                                <tr>
+                                    <th><a href="https://affordablehousingonline.com/housing-search/Michigan/Jackson">Jackson</a></th>
+                                    <td>2,683</td>
+                                    <td>1,838</td>
+                                    <td>49.48%</td>
+                                    <td>$25,943 - $30,231</td>
+                                    <td>$625 - $679</td>
+                                    <td>56.91%</td>
+                                </tr>
+                                <tr>
+                                    <th><a href="https://affordablehousingonline.com/housing-search/Michigan/Detroit">Detroit</a></th>
+                                    <td>27,103</td>
+                                    <td>15,055</td>
+                                    <td>50.59%</td>
+                                    <td>$25,359 - $26,172</td>
+                                    <td>$740 - $754</td>
+                                    <td>57.94%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="tab-pane" id="compare" role="tabpanel">
+                        <h1>Cost of Living</h1>
+                        <hr>
+                        <p>Comparison of income versus housing costs for several cities/regions in Michigan.</p>
+                        <table class="table table-sm table-striped">
+                            <thead>
+                                <th>Location</th>
+                                <th>Annual Per Capita</th>
+                                <th>Annual Household</th>
+                                <th>Average Home Cost</th>
+                                <th>Studio Cost</th>
+                                <th>2 Bedroom Cost</th>
+                                <th>Percent of Income(Studio)</th>
+                                <th>Percent of Income(2 Bedroom)</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Detroit</td>
+                                    <td>$14,717</td>
+                                    <td>$26,974</td>
+                                    <td>$45,500</td>
+                                    <td>$510</td>
+                                    <td>$811</td>
+                                    <td>49%</td>
+                                    <td>42%</td>
+                                </tr>
+                                <tr>
+                                    <td>Jackson</td>
+                                    <td>$15,230</td>
+                                    <td>$39,674</td>
+                                    <td>$64,700</td>
+                                    <td>$490</td>
+                                    <td>$720</td>
+                                    <td>45%</td>
+                                    <td>26%</td>
+                                </tr>
+                                <tr>
+                                    <td>Cadillac</td>
+                                    <td>$16,801</td>
+                                    <td>$36,091</td>
+                                    <td>$74,900</td>
+                                    <td>$523</td>
+                                    <td>$728</td>
+                                    <td>44%</td>
+                                    <td>28%</td>
+                                </tr>
+                                <tr>
+                                    <td>Petoskey</td>
+                                    <td>$20,259</td>
+                                    <td>$40,742</td>
+                                    <td>$211,100</td>
+                                    <td>$527</td>
+                                    <td>$770</td>
+                                    <td>37%</td>
+                                    <td>27%</td>
+                                </tr>
+                                <tr>
+                                    <td>Traverse City</td>
+                                    <td>$22,247</td>
+                                    <td>$43,664</td>
+                                    <td>$224,700</td>
+                                    <td>$561</td>
+                                    <td>$823</td>
+                                    <td>36%</td>
+                                    <td>27%</td>
+                                </tr>
+                                <tr>
+                                    <td>Grand Traverse County</td>
+                                    <td>$27,091</td>
+                                    <td>$50,647</td>
+                                    <td>$203,300</td>
+                                    <td>$571</td>
+                                    <td>$878</td>
+                                    <td>30%</td>
+                                    <td>24%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="tab-pane" id="sources" role="tabpanel">
+                        <h1>Resources</h1>
+                        <ul class="list-group">
+                            <li class="list-group-item"><a href="https://www.zillow.com/traverse-city-mi/">Zillow Real Estate Listings for Research</a></li>
+                            <li class="list-group-item"><a href="https://affordablehousingonline.com/housing-search/Michigan/Traverse-City">Affordable Housing Traverse</a></li>
+                            <li class="list-group-item"><a href="https://affordablehousingonline.com/housing-search/Michigan/Grand-Traverse-County">Affordable Housing Grand Traverse County</a></li>
+                            <li class="list-group-item"><a href="https://traversecityhc.wordpress.com/">Traverse City Housing Commission</a></li>
+                            <li class="list-group-item"><a href="https://www.lowincomehousing.us/MI/traverse_city.html">Traverse City Low Income Housing Rentals</a></li>
+                            <li class="list-group-item"><a href="http://section-8-housing-income-limits.credio.com/l/2270/Grand-Traverse-County-MI">Section 8 Low Income Qualifier Guidelines</a></li>
+                        </ul>          
+                    </div>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 </body>
 </html>
